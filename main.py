@@ -9,7 +9,7 @@ if __name__ == '__main__':
     print("begin checkin")
     for session in sessions:
         if session:
-            user = User(session, EzCaptchaImpl())
+            user = User(session,)
             if http_proxy:
                 user.session.proxies.update({
                     'http': http_proxy,
